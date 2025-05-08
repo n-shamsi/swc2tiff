@@ -12,7 +12,7 @@ class Point:
         self.r = int(r)
 
 
-def read_swcs(filename):
+def read_swc(filename):
     try:
         points = []
         with open(filename, 'r') as file:
@@ -61,7 +61,7 @@ def swc2tif(args):
         output_tiff = sys.argv[3]
 
     image = tifffile.imread(image_path)
-    points = read_swcs(swc_file)
+    points = read_swc(swc_file)
 
     # Create a 3D image with the same dimensions as the input image
     mask = np.zeros_like(image, dtype=np.uint8)
