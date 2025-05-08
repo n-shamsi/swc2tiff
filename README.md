@@ -13,6 +13,7 @@ A Python version of [this](https://github.com/imadtoubal/swc-to-tif/tree/master)
 * [Requirements](#requirements)
 * [Known Issues](#known-issues)
 * [Acknowledgments](#acknowledgments)
+* [Example Output](#example-output)
 
 **Usage**
 ---------
@@ -49,9 +50,15 @@ swc2tiff(args)
 - The C++ [SWC2Tiff](https://github.com/imadtoubal/swc-to-tif/tree/master) utility.
 
 **Example Output**
+------------------
+
 A neuron from a Vaa3D raw file converted to a TIFF stack:
-![Vaa3D raw file](assets/neuTubeCapture20250507_1.tif, "Neuron from Vaa3D raw file")
 
-![Neuron TIFF stack](assets/neuTubeCapture20250507_3.tif, "Neuron TIFF stack")
+**Neuron from Vaa3D raw file**
+!["Neuron from Vaa3D raw file"](assets/neuTubeCapture20250507_1.png)
 
-![Layered neurons](assets/neuTubeCapture20250507_2.tif, "Layered neurons")
+**Neuron TIFF stack**
+!["Neuron TIFF stack"](assets/neuTubeCapture20250507_3.png)
+
+**Layered neurons**
+!["Layered neurons"](assets/neuTubeCapture20250507_2.png)
