@@ -57,7 +57,7 @@ A neuron from a Vaa3D raw file converted to a TIFF stack:
 **Neuron from Vaa3D raw file**
 !["Neuron from Vaa3D raw file"](assets/neuTubeCapture20250507_1.png)
 
-**Neuron TIFF stack**
+**Neuron TIFF stack from swc2tiff**
 !["Neuron TIFF stack"](assets/neuTubeCapture20250507_3.png)
 
 **Layered neurons**
