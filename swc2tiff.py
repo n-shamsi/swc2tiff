@@ -52,7 +52,7 @@ def brush3D(image, x, y, z, radius):
     return image
 
 
-def swc2tif(args):
+def swc2tiff(args):
     if len(args) == 3:
         image_path, swc_file, output_tiff = args
     else:
