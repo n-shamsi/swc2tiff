@@ -1,5 +1,4 @@
-import sys
-
+import fire
 import numpy as np
 import tifffile
 
@@ -52,16 +51,9 @@ def brush3D(image, x, y, z, radius):
     return image
 
 
-def swc2tiff(args):
-    if len(args) == 3:
-        image_path, swc_file, output_tiff = args
-    else:
-        image_path = sys.argv[1]
-        swc_file = sys.argv[2]
-        output_tiff = sys.argv[3]
-
+def swc2tiff(image_path, swc_path, output_path):
     image = tifffile.imread(image_path)
-    points = read_swc(swc_file)
+    points = read_swc(swc_path)
 
     # Create a 3D image with the same dimensions as the input image
     mask = np.zeros_like(image, dtype=np.uint8)
@@ -75,6 +67,8 @@ def swc2tiff(args):
         # Draw a sphere at the specified coordinates with the specified radius
         mask = brush3D(mask, x, y, z, r)
 
-    tifffile.imwrite(output_tiff, mask)
+    tifffile.imwrite(output_path, mask)
+    print(f"SWC file converted to TIFF and saved.")
 
-    return 0
+if __name__ == '__main__':
+    fire.Fire(swc2tiff)

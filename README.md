@@ -21,14 +21,13 @@ A Python version of [this](https://github.com/imadtoubal/swc-to-tif/tree/master)
 This utility can be used in one of two ways:
 1. Via command line
 ```bash
-python swc2tiff.py <tiff_file.tif> <swc_file.swc> <out_file.tif>
+python swc2tiff.py --image_path path/to/.tif --swc_path path/to/.swc --output_path path/to/.tif
 ```
 2. As a Python module
 ```bash
 from swc2tiff import swc2tiff
 
-args = ['tiff_file.tif', 'swc_file.swc', 'out_file.tif']
-swc2tiff(args)
+swc2tiff(image_path, swc_path, output_path)
 ```
 
 **Requirements**
