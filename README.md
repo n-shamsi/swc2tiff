@@ -6,6 +6,8 @@
 
 A Python version of [this](https://github.com/imadtoubal/swc-to-tif/tree/master) utility for converting SWC (neuron reconstruction) files to TIFF stacks. The C++ version of this utility exits with a segmentation fault for some input SWC files. This Python version is a workaround for that issue, while using `tifffile` (makes it nicer to read and write TIFFs).
 
+The code here can be used to programmatically create tiff stacks with the same dimensions are their corresponding Vaa3D raw files. If you're simply interested in converting a .swc to .tiff without matching the dimensions of Vaa3D raw files, then you can use [kimimaro](https://github.com/seung-lab/kimimaro).
+
 **Table of Contents**
 -----------------
 
